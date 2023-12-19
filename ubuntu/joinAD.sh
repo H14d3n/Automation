@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install realmd sssd samba-common samba-common-bin samba-libs oddjob oddjob-mkhomedir packagekit samba samba-common krb5-user adcli ntp
 
 # Join active directory with code (uncomment if needed)
-# sudo realm join --user=administrator funid.local
+sudo realm join --user=administrator funid.local
 
 # Stop sssd service for pam update
 sudo systemctl stop sssd
