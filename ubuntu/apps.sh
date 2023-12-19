@@ -51,8 +51,10 @@
     wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage .
 
     chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
+    
+    # OneDrive GUI will be stored in the Home-Folder, where you can access and use it. 
 	
-# ownCloud (SwitchDrive)
+# ownCloud (SwitchDrive) 
 
 	wget -nv https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_22.04/Release.key -O - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/owncloud.gpg > /dev/null
 
