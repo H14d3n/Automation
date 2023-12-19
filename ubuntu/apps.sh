@@ -117,6 +117,8 @@
 	
 	
 	sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean && sudo apt autoremove
+ 
+ # Reboot to apply all changes, don't forget to use Xorg
 	
 reboot
 
