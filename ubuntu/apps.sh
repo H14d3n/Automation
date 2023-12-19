@@ -1,4 +1,4 @@
-#bin/bash
+#/!/bin/bash
 
 # System auf den neuesten Stand bringen
 
