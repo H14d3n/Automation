@@ -78,6 +78,7 @@
 # Flameshot (Ubuntu on Xorg required)
 
 	sudo apt install flameshot
+ 	sudo apt update
 	
 # Gnome Tweaks
 	
