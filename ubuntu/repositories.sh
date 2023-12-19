@@ -1,4 +1,6 @@
-#bin/bash
+#/!/bin/bash
+
+# Be careful with this script, as it can harm your computer
 
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(mantic) main"
 
