@@ -1,0 +1,13 @@
+#bin/bash
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(mantic) main"
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(mantic) restricted"
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(mantic) universe"
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(mantic) multiverse"
+
+sudo apt update
+
+
