@@ -1,3 +1,5 @@
 # Automation
-## 🤖🤖🤖🤖
-In this Repo I will store all my Automation Scripts
+This repository is open for everyone and can be freely used.
+Feel free to clone or fork the repo.
+
+## ✌️
