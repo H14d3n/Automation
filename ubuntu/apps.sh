@@ -94,7 +94,7 @@
 
 	
 # Download and install Synaptics repository keyring
-	wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+	wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb .
 	sudo dpkg -i synaptics-repository-keyring.deb
 	sudo apt-get update
 
