@@ -70,7 +70,8 @@
 	
 	
 # Notepad++
-	
+
+ 	sudo apt install wine
 	sudo snap install notepad-plus-plus
 	
 # Zoom
