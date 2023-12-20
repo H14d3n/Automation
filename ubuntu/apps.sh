@@ -1,16 +1,13 @@
 #/!/bin/bash
 
 # System auf den neuesten Stand bringen
-
 	sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
 	sudo apt install snapd
 
 # Office365 WebDesktop
-
 	sudo snap install --beta Office365webdesktop
 
 # Teams App und Konfiguration
-	
 	sudo snap install teams-for-linux
 	
 	sudo apt install v4l2loopback-dkms
@@ -19,7 +16,6 @@
 	ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/video1
 	
 # OneDrive GUI
-
     sudo apt remove onedrive
 
     sudo add-apt repository --remove ppa:yann1ck
@@ -55,7 +51,6 @@
     # OneDrive GUI will be stored in the Home-Folder, where you can access and use it. 
 	
 # ownCloud (SwitchDrive) 
-
 	wget -nv https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_22.04/Release.key -O - | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/owncloud.gpg > /dev/null
 
 	sudo apt update
@@ -70,29 +65,23 @@
 	
 	
 # Notepad++
-
  	sudo apt install wine
 	sudo snap install notepad-plus-plus
 	
 # Zoom
-	
 	sudo snap install zoom-client
 	
 # Flameshot (Ubuntu on Xorg required)
-
 	sudo apt install flameshot
  	sudo apt update
 	
 # Gnome Tweaks
-	
 	sudo apt install gnome-tweaks
 
 # fSearch
-
 	sudo snap install fsearch
 
 # Intune Portal
-	
 	sudo apt install curl gpg
 	
 	curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -104,26 +93,22 @@
 	sudo apt install intune-portal
 
 	
-# Synaptics DisplayLink
-	
-	wget install "https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb"
-	
-	sudo apt update -y && sudo apt upgrade -y
-	
-	sudo apt install displaylink-driver
-	
-# Wine
+# Download and install Synaptics repository keyring
+	wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
+	sudo dpkg -i synaptics-repository-keyring.deb
+	sudo apt-get update
 
-	sudo apt install wine
-	sudo apt install gnome-control-center
-	
-	
+# Upgrade packages
+	sudo apt-get upgrade -y
+
+# Install DisplayLink driver
+	sudo apt-get install displaylink-driver -y
+
+# Clean up
+	rm synaptics-repository-keyring.deb
+
 	sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean && sudo apt autoremove
  
  # Reboot to apply all changes, don't forget to use Xorg
-	
+	sudo apt install gnome-control-center
 reboot
-
-
-
-
