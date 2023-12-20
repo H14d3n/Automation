@@ -114,6 +114,7 @@
 # Wine
 
 	sudo apt install wine
+	sudo apt install gnome-control-center
 	
 	
 	sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean && sudo apt autoremove
