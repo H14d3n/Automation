@@ -1,7 +1,7 @@
 #/!/bin/bash
 
 # System auf den neuesten Stand bringen
-	sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
+	sudo apt update -y && sudo apt upgrade -y
 	sudo apt install snapd
 
 # Office365 WebDesktop
