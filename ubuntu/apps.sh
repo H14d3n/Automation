@@ -18,24 +18,24 @@
 	ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/video1
 	
 # OneDrive GUI
-    sudo apt remove onedrive
-    sudo add-apt-repository --remove ppa:yann1ck
-    sudo rm /etc/systemd/user/default.target.wants/onedrive.service
-    sudo rm -rf /var/lib/dpkg/lock-frontend
-    sudo rm -rf /var/lib/dpkg/lock
-    sudo apt-get update
-    sudo apt-get upgrade -y
+   	sudo apt remove onedrive
+    	sudo add-apt-repository --remove ppa:yann1ck
+    	sudo rm /etc/systemd/user/default.target.wants/onedrive.service
+    	sudo rm -rf /var/lib/dpkg/lock-frontend
+    	sudo rm -rf /var/lib/dpkg/lock
+    	sudo apt-get update
+    	sudo apt-get upgrade -y
     
-    wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
+    	wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
+    	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
     
-    sudo apt-get install python3
-    sudo apt-get install fuse
-    sudo apt-get update
-    sudo apt install onedrive
-    cd ~/
-    wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage .
-    chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
+    	sudo apt-get install python3
+    	sudo apt-get install fuse
+    	sudo apt-get update
+    	sudo apt install onedrive
+    	cd ~/
+    	wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage .
+    	chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
     
     # OneDrive GUI will be stored in the Home-Folder, where you can access and use it. 
 	
