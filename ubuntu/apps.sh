@@ -2,6 +2,8 @@
 
 # System auf den neuesten Stand bringen
 	sudo apt update -y && sudo apt upgrade -y
+ 	sudo apt install software-properties-common
+
 	sudo apt install snapd
 
 # Office365 WebDesktop
@@ -17,7 +19,7 @@
 	
 # OneDrive GUI
     sudo apt remove onedrive
-    sudo add-apt repository --remove ppa:yann1ck
+    sudo add-apt-repository --remove ppa:yann1ck
     sudo rm /etc/systemd/user/default.target.wants/onedrive.service
     sudo rm -rf /var/lib/dpkg/lock-frontend
     sudo rm -rf /var/lib/dpkg/lock
@@ -98,4 +100,8 @@
  
  # Reboot to apply all changes, don't forget to use Xorg
 	sudo apt install gnome-control-center
+ 
+echo "Please ensure all installations are completed. Press Enter to reboot."
+read
+
 reboot
