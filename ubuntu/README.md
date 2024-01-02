@@ -30,4 +30,4 @@ Feel free to explore and customize these scripts to suit your specific needs.
 
 **Note:** Make sure to review and understand the scripts before execution.
 
-Thank you for using these scripts to enhance your Ubuntu experience!
+Thank you for using these scripts to enhance your Ubuntu experience.
