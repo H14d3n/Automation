@@ -7,7 +7,7 @@ sudo apt install -y software-properties-common
 sudo apt install -y snapd
 
 # Office365 WebDesktop
-sudo snap install --classic Office365webdesktop
+sudo snap install --edge Office365webdesktop
 
 # Teams App und Konfiguration
 sudo snap install teams-for-linux
@@ -19,13 +19,10 @@ ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/vid
 sudo apt remove onedrive
 sudo add-apt-repository --remove ppa:yann1ck
 sudo rm /etc/systemd/user/default.target.wants/onedrive.service
-sudo rm -rf /var/lib/dpkg/lock-frontend
-sudo rm -rf /var/lib/dpkg/lock
 wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
 sudo apt-get install -y python3
 sudo apt install -y fuse
-sudo apt-get update -y
 sudo apt install -y onedrive
 wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
@@ -90,7 +87,7 @@ sudo apt install -y gnome-control-center
 sudo lpadmin -p br-pr-ug -E -v socket://10.5.20.25 -L "Campus Brig Drucker UG"
 sudo lpadmin -p br-pr-001 -E -v socket://10.5.20.23 -L "Campus Brig Drucker 1.Stock"
 sudo lpadmin -p br-pr-004 -E -v socket://10.5.20.22 -L "Campus Brig Drucker 4.Stock"
-sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.Stock"
+sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.Stock" -m "Ricoh IM C3000 PS"
 
 # Reboot to apply all changes, don't forget to use Xorg
 # Automatic reboot without user confirmation
