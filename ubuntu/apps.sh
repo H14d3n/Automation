@@ -6,7 +6,7 @@ sudo apt install -y software-properties-common
 sudo apt install -y snapd
 
 # Office365 WebDesktop
-sudo snap install --beta Office365webdesktop
+sudo snap install -y --classic Office365webdesktop
 
 # Teams App und Konfiguration
 sudo snap install teams-for-linux
