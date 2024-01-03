@@ -16,7 +16,7 @@ ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/vid
 
 # OneDrive GUI
 sudo apt remove onedrive
-sudo add-apt repository --remove ppa:yann1ck
+sudo add-apt-repository --remove ppa:yann1ck
 sudo rm /etc/systemd/user/default.target.wants/onedrive.service
 sudo rm -rf /var/lib/dpkg/lock-frontend
 sudo rm -rf /var/lib/dpkg/lock
