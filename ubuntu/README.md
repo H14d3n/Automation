@@ -17,6 +17,7 @@ Run this script to perform the following tasks:
 - DisplayLink Driver
 - Intune
 - Small tweaks for optimal performance
+- Add local network printers
 
 ## `joinAD.sh`
 
