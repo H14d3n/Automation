@@ -87,6 +87,12 @@ rm synaptics-repository-keyring.deb
 
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoclean && sudo apt autoremove
 
+# Add Printers
+sudo lpadmin -p br-pr-ug -E -v socket://10.5.20.25 -L "Campus Brig Drucker UG"
+sudo lpadmin -p br-pr-001 -E -v socket://10.5.20.23 -L "Campus Brig Drucker 1.Stock"
+sudo lpadmin -p br-pr-004 -E -v socket://10.5.20.22 -L "Campus Brig Drucker 4.Stock"
+sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.Stock"
+
 # Reboot to apply all changes, don't forget to use Xorg
 sudo apt install -y gnome-control-center
 
