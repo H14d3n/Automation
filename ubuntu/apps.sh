@@ -23,7 +23,8 @@ wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ub
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
 sudo apt-get install -y python3
 sudo apt install -y fuse
-sudo apt install -y onedrive
+sudo apt-get update
+sudo apt install -y --no-install-recommends --no-install-suggests onedrive
 wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 
