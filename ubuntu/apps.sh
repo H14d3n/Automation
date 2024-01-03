@@ -91,4 +91,6 @@ sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.St
 
 # Reboot to apply all changes, don't forget to use Xorg
 # Automatic reboot without user confirmation
+echo "Do you want to proceed? [Enter]"
+read
 reboot
