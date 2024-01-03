@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd
 # System auf den neuesten Stand bringen
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install -y software-properties-common
