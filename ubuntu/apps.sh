@@ -29,7 +29,7 @@ sudo apt-get install fuse
 sudo apt-get update
 sudo apt install onedrive
 cd ~/
-wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage .
+wget https://github.com/bpozdena/OneDriveGUI/releases/download/v1.0.3/OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 chmod +x OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 
 # ownCloud (SwitchDrive)
