@@ -19,6 +19,6 @@ This repository houses *automation scripts* for quick and easy installation of e
 
 3. Execute the desired script/s
    ```bash
-   ./install.sh
+   ./apps.sh
 
 This repository is released under the GNU General Public License (GPL), ensuring that you have the freedom to use, modify, and distribute these scripts.
