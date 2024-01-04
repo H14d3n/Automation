@@ -70,20 +70,6 @@ sudo rm microsoft.gpg
 sudo apt update
 sudo apt install -y intune-portal
 
-# Download and install Synaptics repository keyring
-wget https://www.synaptics.com/sites/default/files/Ubuntu/pool/stable/main/all/synaptics-repository-keyring.deb
-sudo dpkg -i synaptics-repository-keyring.deb
-sudo apt-get update
-
-# Upgrade packages
-sudo apt-get upgrade -y
-
-# Install DisplayLink driver
-sudo apt-get install -y displaylink-driver
-
-# Clean up
-rm synaptics-repository-keyring.deb
-
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install -y gnome-control-center
 
@@ -95,6 +81,7 @@ sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.St
 
 # Reboot to apply all changes, don't forget to use Xorg
 # Automatic reboot without user confirmation
-echo "Do you want to proceed? [Enter]"
+echo "If Errors occur, please rerun the script."
+echo "Proceed to reboot? [Enter]"
 read
 reboot
