@@ -4,16 +4,12 @@ cd
 # System auf den neuesten Stand bringen
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install -y software-properties-common
-sudo apt install -y snapd
 
 # Office365 WebDesktop
 sudo snap install --edge office365webdesktop
 
 # Teams App und Konfiguration
 sudo snap install teams-for-linux
-sudo apt install -y v4l2loopback-dkms
-sudo modprobe v4l2loopback
-ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/video1
 
 # OneDrive GUI
 sudo apt remove onedrive
