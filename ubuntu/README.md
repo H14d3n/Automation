@@ -14,9 +14,13 @@ Run this script to perform the following tasks:
 - Notepad++
 - Zoom
 - Flameshot
-- DisplayLink Driver
 - Intune
 - Small tweaks for optimal performance
+- Add local network printers
+
+## `displaylink.sh`
+
+This Script manages every Driver related to Monitors and Cameras and the Video-Dock
 
 ## `joinAD.sh`
 

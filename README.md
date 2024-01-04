@@ -11,9 +11,14 @@ This repository houses *automation scripts* for quick and easy installation of e
 2. Navigate to the repository:
    ```bash
    cd Automation
+   cd ubuntu
+
+3. Make the desired script/s executable:
+   ```bash
+   chmod +x "filename"
 
 3. Execute the desired script/s
    ```bash
-   ./install.sh
+   ./apps.sh
 
 This repository is released under the GNU General Public License (GPL), ensuring that you have the freedom to use, modify, and distribute these scripts.
