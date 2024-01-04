@@ -20,7 +20,7 @@ Run this script to perform the following tasks:
 
 ## `displaylink.sh`
 
-This Script manages every Driver related to Monitors and Cameras and the Video-Dock
+This Script manages every Driver related to Monitors, Cameras and the Video-Dock.
 
 ## `joinAD.sh`
 
