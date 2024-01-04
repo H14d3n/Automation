@@ -13,3 +13,9 @@ sudo apt-get install -y displaylink-driver
 
 # Clean up
 rm synaptics-repository-keyring.deb
+
+# Additional Camera Driver
+
+sudo apt install -y v4l2loopback-dkms
+sudo modprobe v4l2loopback
+ffmpeg -f v4l2 -i /dev/video0 -vf format=yuv420p,scale=1280x720 -f v4l2 /dev/video1
