@@ -18,7 +18,7 @@ Run this script to perform the following tasks:
 - Small tweaks for optimal performance
 - Add local network printers
 
-## `displaylink.sh
+## `displaylink.sh`
 
 This Script manages every Driver related to Monitors and Cameras and the Video-Dock
 
