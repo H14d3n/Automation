@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 echo "Are you sure you want to delete all previously installed Apps? [Enter]"
 read
