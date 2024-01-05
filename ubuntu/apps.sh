@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Press [Enter] to Install"
+read
+
 cd
 # System auf den neuesten Stand bringen
 sudo apt update -y && sudo apt upgrade -y
