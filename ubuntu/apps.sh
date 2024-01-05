@@ -80,7 +80,7 @@ sudo lpadmin -p br-pr-005 -E -v socket://10.5.20.21 -L "Campus Brig Drucker 5.St
 
 # Reboot to apply all changes, don't forget to use Xorg
 # Automatic reboot without user confirmation
-echo "If Errors occur, please rerun the script."
+echo "If Errors occur, please run the remove-apps script and reinstall."
 echo "Proceed to reboot? [Enter]"
 read
 reboot
