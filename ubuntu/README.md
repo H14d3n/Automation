@@ -18,6 +18,11 @@ Run this script to perform the following tasks:
 - Small tweaks for optimal performance
 - Add local network printers
 
+## `remove-apps.sh`
+
+This Script is used to remove the apps, that come within the Main Installer Script.
+Be cautious with this script, as it removes **every** app previously installed.
+
 ## `displaylink.sh`
 
 This Script manages every Driver related to Monitors, Cameras and the Video-Dock.
