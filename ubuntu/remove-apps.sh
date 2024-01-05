@@ -51,16 +51,25 @@ sudo apt remove intune-portal
 sudo rm /etc/apt/sources.list.d/microsoft-ubuntu-jammy-prod.list
 sudo rm /usr/share/keyrings/microsoft.gpg
 
-
 # Remove Printers
 sudo lpadmin -x br-pr-ug
 sudo lpadmin -x br-pr-001
 sudo lpadmin -x br-pr-004
 sudo lpadmin -x br-pr-005
 
+# Remove DisplayLink driver
+sudo apt-get remove --purge displaylink-driver
+
+# Remove additional Camera Driver packages
+sudo apt-get remove --purge v4l2loopback-dkms
+sudo rmmod v4l2loopback
+
 # Add Locks again
 sudo touch /var/lib/dpkg/lock-frontend
 sudo touch /var/lib/dpkg/lock
+
+# Undo Synaptics repository keyring installation
+sudo apt-get remove --purge synaptics-repository-keyring
 
 sudo apt update -y && sudo apt upgrade -y
 sudo apt autoremove -y && sudo apt autoclean -y
