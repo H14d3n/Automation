@@ -59,6 +59,9 @@ sudo lpadmin -x br-pr-005
 sudo touch /var/lib/dpkg/lock-frontend
 sudo touch /var/lib/dpkg/lock
 
+sudo apt update -y && sudo apt upgrade -y
+sudo apt autoremove -y && sudo apt autoclean -y
+
 echo "All dependent Apps are now remove"
 echo "Press [Enter] to proceed"
 read
