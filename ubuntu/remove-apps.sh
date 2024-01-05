@@ -9,7 +9,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Remove Software Properties
 sudo apt remove -y software-properties-common
 
-# Remove OFfice365 WebDesktop
+# Remove Office365 WebDesktop
 sudo snap remove office365webdesktop
 
 # Remove Teams
