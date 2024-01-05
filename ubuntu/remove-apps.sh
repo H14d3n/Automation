@@ -1,5 +1,8 @@
 #!bin/bash
 
+echo "Are you sure you want to delete all previously installed Apps? [Enter]"
+read
+
 # System auf den neuesten Stand bringen
 sudo apt update -y && sudo apt upgrade -y
 
