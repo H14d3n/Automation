@@ -65,6 +65,6 @@ sudo touch /var/lib/dpkg/lock
 sudo apt update -y && sudo apt upgrade -y
 sudo apt autoremove -y && sudo apt autoclean -y
 
-echo "All dependent Apps are now remove"
+echo "All dependent Apps are removed."
 echo "Press [Enter] to proceed"
 read
