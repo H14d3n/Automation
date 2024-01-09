@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Remove Printers
 sudo lpadmin -x br-pr-ug
 sudo lpadmin -x br-pr-eg
