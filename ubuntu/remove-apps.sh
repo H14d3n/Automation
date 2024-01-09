@@ -4,6 +4,7 @@ echo "Are you sure you want to delete all previously installed Apps? [Enter]"
 read
 
 # System auf den neuesten Stand bringen
+cd
 sudo apt update -y && sudo apt upgrade -y
 
 # Remove Software Properties
@@ -16,19 +17,19 @@ sudo snap remove office365webdesktop
 sudo snap remove teams-for-linux
 
 # Remove OneDrive GUI:
+sudo rm OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 sudo rm /etc/apt/sources.list.d/onedrive.list
 sudo rm /usr/share/keyrings/obs-onedrive.gpg
 sudo rm /etc/apt/sources.list.d/obs-onedrive.list
 sudo apt remove onedrive
-sudo rm OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 sudo rm -r ~/.config/onedrive
 sudo rm -r ~/.config/onedrive-gui
 
 # Remove ownCloud
-sudo apt remove owncloud-client
+sudo apt remove -y owncloud-client
 sudo rm /etc/apt/sources.list.d/owncloud.list
 sudo rm /etc/apt/trusted.gpg.d/owncloud.gpg
-sudo apt remove apt-transport-https
+sudo apt remove -y apt-transport-https
 
 # Remove Notepad++
 sudo apt remove -y wine
@@ -38,27 +39,32 @@ sudo snap remove notepad-plus-plus
 sudo snap remove zoom-client
 
 # Remove Flameshot
-sudo apt remove flameshot
+sudo apt remove -y flameshot
+sudo rm -r ~/.config/flameshot
 
 # Remove Gnome-Tweaks
-sudo apt remove gnome-tweaks
+sudo apt remove -y gnome-tweaks
 
 # Remove fSearch
 sudo snap remove fsearch
 
 # Remove Intune
-sudo apt remove intune-portal
+sudo apt remove -y intune-portal
 sudo rm /etc/apt/sources.list.d/microsoft-ubuntu-jammy-prod.list
 sudo rm /usr/share/keyrings/microsoft.gpg
 
 # Remove Printers
 sudo lpadmin -x br-pr-ug
+sudo lpadmin -x br-pr-eg
 sudo lpadmin -x br-pr-001
 sudo lpadmin -x br-pr-004
 sudo lpadmin -x br-pr-005
+sudo lpadmin -x si-pr-001
+sudo lpadmin -x fr-pr-001
+sudo lpadmin -x pf-pr-001
 
 # Remove DisplayLink driver
-sudo apt-get remove --purge displaylink-driver
+sudo apt-get remove -y --purge displaylink-driver
 
 # Remove additional Camera Driver packages
 sudo apt-get remove --purge v4l2loopback-dkms
@@ -69,7 +75,7 @@ sudo touch /var/lib/dpkg/lock-frontend
 sudo touch /var/lib/dpkg/lock
 
 # Undo Synaptics repository keyring installation
-sudo apt-get remove --purge synaptics-repository-keyring
+sudo apt-get remove -y --purge synaptics-repository-keyring
 
 sudo apt update -y && sudo apt upgrade -y
 sudo apt autoremove -y && sudo apt autoclean -y
