@@ -4,6 +4,7 @@ echo "Are you sure you want to delete all previously installed Apps? [Enter]"
 read
 
 # System auf den neuesten Stand bringen
+cd
 sudo apt update -y && sudo apt upgrade -y
 
 # Remove Software Properties
@@ -16,11 +17,11 @@ sudo snap remove office365webdesktop
 sudo snap remove teams-for-linux
 
 # Remove OneDrive GUI:
+sudo rm OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 sudo rm /etc/apt/sources.list.d/onedrive.list
 sudo rm /usr/share/keyrings/obs-onedrive.gpg
 sudo rm /etc/apt/sources.list.d/obs-onedrive.list
 sudo apt remove onedrive
-sudo rm OneDriveGUI-1.0.3_fix116-x86_64.AppImage
 sudo rm -r ~/.config/onedrive
 sudo rm -r ~/.config/onedrive-gui
 
@@ -39,6 +40,7 @@ sudo snap remove zoom-client
 
 # Remove Flameshot
 sudo apt remove flameshot
+sudo rm -r ~/.config/flameshot
 
 # Remove Gnome-Tweaks
 sudo apt remove gnome-tweaks
